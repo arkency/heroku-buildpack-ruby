@@ -11,5 +11,10 @@ class LanguagePack::Rails7 < LanguagePack::Rails6
       rails_version < Gem::Version.new('8.0.0')
     return is_rails
   end
+  
+  private
+  
+  def run_assets_precompile_rake_task
+  end
 end
 
